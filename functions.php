@@ -1,7 +1,7 @@
 <?php
 // Spalte zur Benutzerliste hinzufügen
 function add_logged_in_column($columns) {
-    $columns['logged_in'] = 'Angemeldet';
+    $columns['logged_in'] = 'Currently active';
     return $columns;
 }
 add_filter('manage_users_columns', 'add_logged_in_column');
